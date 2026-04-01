@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | JustProperty.in</title>
+  <meta name="description" content="Contact JustProperty.in for Delhi NCR property enquiries." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar"><div class="container topbar-inner"><span>Contact JustProperty.in</span><a href="mailto:info@justproperty.in">info@justproperty.in</a></div></div>
+  <header class="site-header"><div class="container nav">
+    <a class="brand" href="index.html"><img src="assets/logo.svg" alt="JustProperty logo" /><div><strong>JustProperty.in</strong><span>Delhi NCR Property Advisory</span></div></a>
+    <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="properties.html">Properties</a>
+      <a href="localities.html">Localities</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active btn btn-light">Contact</a>
+    </nav>
+  </div></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="breadcrumb"><a href="index.html">Home</a> / Contact</p>
+        <h1>Let’s discuss your property requirement</h1>
+        <p>For buyers, sellers, investors and landlords across Delhi NCR.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="contact-panel">
+          <h2>Send an enquiry</h2>
+          <p class="notice">This starter version uses a mailto form for simple GitHub deployment. In the next version, the same form can be connected to WhatsApp, Telegram, Google Sheets or a CRM.</p>
+
+          <form id="contactLeadForm" class="lead-form">
+            <div class="form-grid">
+              <div class="field">
+                <label for="cname">Full Name</label>
+                <input id="cname" name="name" type="text" required placeholder="Your name" />
+              </div>
+              <div class="field">
+                <label for="cphone">Phone</label>
+                <input id="cphone" name="phone" type="tel" required placeholder="Your mobile number" />
+              </div>
+              <div class="field">
+                <label for="cemail">Email</label>
+                <input id="cemail" name="email" type="email" placeholder="Your email address" />
+              </div>
+              <div class="field">
+                <label for="ctype">I am looking to</label>
+                <select id="ctype" name="intent">
+                  <option>Buy property</option>
+                  <option>Sell property</option>
+                  <option>Rent property</option>
+                  <option>Lease out property</option>
+                  <option>Invest in property</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="clocation">Preferred Location / Locality</label>
+              <input id="clocation" name="location" type="text" placeholder="Example: Golf Course Extension Road, South Delhi, Noida Expressway" />
+            </div>
+
+            <div class="field">
+              <label for="cbudget">Budget / Price Expectation</label>
+              <input id="cbudget" name="budget" type="text" placeholder="Example: Up to ₹3Cr / Looking to sell at ₹5.5Cr" />
+            </div>
+
+            <div class="field">
+              <label for="cmessage">Message</label>
+              <textarea id="cmessage" name="message" rows="6" placeholder="Tell us about your requirement, property type, timeline and any must-have preferences."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary full">Submit Enquiry</button>
+            <div class="success-banner">Your email client should open with the enquiry details.</div>
+          </form>
+        </div>
+
+        <div class="contact-panel">
+          <h2>Contact details</h2>
+          <p><strong>Email:</strong> <a href="mailto:info@justproperty.in">info@justproperty.in</a></p>
+          <p><strong>Coverage:</strong> Delhi, Gurgaon, Noida, Greater Noida, Faridabad and Ghaziabad</p>
+          <p><strong>Website use case:</strong> Buyer leads, seller leads, investor leads, rental and relocation enquiries</p>
+
+          <div class="map-placeholder">
+            NCR Coverage Map Placeholder<br />
+            Add your office address, Google Map embed or service radius visual in the next update.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-grid">
+    <div><a class="brand footer-brand" href="index.html"><img src="assets/logo.svg" alt="JustProperty logo" /><div><strong>JustProperty.in</strong><span>Luxury & Mid-Segment Property Leads</span></div></a><p>Contact page structured for serious lead capture.</p></div>
+    <div><h4>Quick Links</h4><a href="properties.html">Properties</a><a href="localities.html">Localities</a><a href="services.html">Services</a><a href="about.html">About</a></div>
+    <div><h4>Support</h4><a href="contact.html">Contact</a><a href="privacy-policy.html">Privacy Policy</a><a href="mailto:info@justproperty.in">info@justproperty.in</a></div>
+    <div><h4>Coverage</h4><p>Delhi NCR</p></div>
+  </div><div class="container footer-bottom"><p>© 2026 JustProperty.in. All rights reserved.</p></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JustProperty.in | Luxury & Mid-Segment Property Leads in Delhi NCR</title>
+  <meta name="description" content="JustProperty.in helps buyers, investors, sellers and landlords discover premium and mid-segment property opportunities across Delhi, Gurgaon, Noida, Greater Noida, Faridabad and Ghaziabad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Delhi NCR Property Advisory | Luxury Homes • Premium Floors • Villas • Investment Plots</span>
+      <a href="mailto:info@justproperty.in">info@justproperty.in</a>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="JustProperty logo" />
+        <div>
+          <strong>JustProperty.in</strong>
+          <span>Delhi NCR Property Advisory</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="localities.html">Localities</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-light">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Curated Homes. Serious Buyers. Faster Closures.</p>
+          <h1>Find the right property in <span>Delhi NCR</span> with confidence.</h1>
+          <p class="hero-text">
+            From luxury apartments in Gurgaon and Noida to family homes, builder floors, villas and investment plots in Delhi NCR,
+            JustProperty.in is designed as a high-trust lead generation platform for buyers, investors, sellers and landlords.
+          </p>
+
+          <div class="hero-actions">
+            <a href="properties.html" class="btn btn-primary">Explore Listings</a>
+            <a href="contact.html" class="btn btn-secondary">Book a Consultation</a>
+          </div>
+
+          <div class="metrics">
+            <div class="metric">
+              <strong>Delhi</strong>
+              <span>South, Central & premium addresses</span>
+            </div>
+            <div class="metric">
+              <strong>Gurgaon</strong>
+              <span>Golf Course Road, SPR, Dwarka Expressway</span>
+            </div>
+            <div class="metric">
+              <strong>Noida & Greater Noida</strong>
+              <span>Expressway, Sector corridors, plotted growth</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lead-card reveal delay-1">
+          <div class="lead-card-header">
+            <p class="eyebrow">Get Matched in Minutes</p>
+            <h2>Tell us what you need</h2>
+          </div>
+
+          <form id="heroLeadForm" class="lead-form">
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Full Name</label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="field">
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" type="tel" placeholder="Your number" required />
+              </div>
+              <div class="field">
+                <label for="city">Preferred City</label>
+                <select id="city" name="city">
+                  <option>Delhi</option>
+                  <option>Gurgaon</option>
+                  <option>Noida</option>
+                  <option>Greater Noida</option>
+                  <option>Faridabad</option>
+                  <option>Ghaziabad</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="segment">Segment</label>
+                <select id="segment" name="segment">
+                  <option>Luxury</option>
+                  <option>Upper Mid</option>
+                  <option>Mid Segment</option>
+                  <option>Investment</option>
+                  <option>Rental</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="budget">Budget</label>
+                <select id="budget" name="budget">
+                  <option>₹75L - ₹1.5Cr</option>
+                  <option>₹1.5Cr - ₹3Cr</option>
+                  <option>₹3Cr - ₹5Cr</option>
+                  <option>₹5Cr - ₹10Cr</option>
+                  <option>₹10Cr+</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="propertyType">Property Type</label>
+                <select id="propertyType" name="propertyType">
+                  <option>Apartment</option>
+                  <option>Builder Floor</option>
+                  <option>Villa</option>
+                  <option>Penthouse</option>
+                  <option>Plot / Land</option>
+                  <option>Commercial</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="requirement">Requirement Details</label>
+              <textarea id="requirement" name="requirement" rows="4" placeholder="Example: 3 BHK in Gurgaon near Golf Course Extension Road, ready to move, gated community, budget up to ₹3.5Cr"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary full">Request Property Options</button>
+            <p class="form-note">This demo form opens your email client with the lead details. You can later connect it to your preferred CRM, WhatsApp, Telegram, or backend form handler.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Why JustProperty</p>
+          <h2>Built like a premium property advisory, not a generic classifieds portal.</h2>
+          <p>Inspired by the strongest patterns in Indian real estate portals: search-first discovery, locality intelligence, price-led navigation, verified inventory storytelling and strong buyer intent capture.</p>
+        </div>
+
+        <div class="cards grid-4">
+          <article class="card reveal">
+            <div class="icon">◆</div>
+            <h3>Curated Inventory</h3>
+            <p>Luxury and mid-segment homes, builder floors, villas, plots and investment opportunities across Delhi NCR micro-markets.</p>
+          </article>
+          <article class="card reveal delay-1">
+            <div class="icon">◎</div>
+            <h3>Locality Intelligence</h3>
+            <p>Each destination is presented with lifestyle fit, access, buyer profile, and demand drivers for better decision-making.</p>
+          </article>
+          <article class="card reveal delay-2">
+            <div class="icon">▣</div>
+            <h3>Lead-First Design</h3>
+            <p>Every section is engineered to convert visitors into serious enquiries through targeted CTAs and segmented intent capture.</p>
+          </article>
+          <article class="card reveal delay-3">
+            <div class="icon">◈</div>
+            <h3>Ad-Ready Landing Structure</h3>
+            <p>Perfect base for Google Ads, Meta Ads, SEO pages, locality pages, seller pages and investor campaigns.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Explore By Destination</p>
+          <h2>High-intent NCR markets covered by JustProperty.in</h2>
+        </div>
+
+        <div class="locality-grid">
+          <article class="locality-card reveal">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="Delhi skyline" />
+            <div class="locality-content">
+              <h3>Delhi</h3>
+              <p>South Delhi floors, independent homes, premium enclaves, diplomatic belt adjacency and established family zones.</p>
+              <a href="localities.html#delhi">View Delhi localities</a>
+            </div>
+          </article>
+          <article class="locality-card reveal delay-1">
+            <img src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80" alt="Gurgaon highrise" />
+            <div class="locality-content">
+              <h3>Gurgaon</h3>
+              <p>Luxury condominiums, golf-course living, corporate demand corridors, new launch traction and rental yield pockets.</p>
+              <a href="localities.html#gurgaon">View Gurgaon localities</a>
+            </div>
+          </article>
+          <article class="locality-card reveal delay-2">
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1200&q=80" alt="Noida cityscape" />
+            <div class="locality-content">
+              <h3>Noida & Greater Noida</h3>
+              <p>Expressway demand, township projects, investor inventory, family living clusters and future growth corridors.</p>
+              <a href="localities.html#noida">View Noida localities</a>
+            </div>
+          </article>
+          <article class="locality-card reveal delay-3">
+            <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1200&q=80" alt="Residential towers" />
+            <div class="locality-content">
+              <h3>Faridabad & Ghaziabad</h3>
+              <p>Value-oriented family housing, plotted options, improving connectivity and price-sensitive end-user demand.</p>
+              <a href="localities.html#faridabad">View more</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Featured Inventory</p>
+          <h2>Sample property presentation for your launch version</h2>
+          <p>These are structured demo listings to help you launch fast. Replace them later with verified inventory from your team, channel partners or builders.</p>
+        </div>
+
+        <div class="listing-grid">
+          <article class="listing-card reveal">
+            <span class="badge">Luxury Apartment</span>
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80" alt="Luxury apartment" />
+            <div class="listing-body">
+              <h3>4 BHK Sky Residence • Golf Course Extension, Gurgaon</h3>
+              <p class="price">₹5.95 Cr onwards</p>
+              <ul>
+                <li>Approx. 3200+ sq.ft. super area</li>
+                <li>Clubhouse, landscaped podium, concierge feel</li>
+                <li>Ideal for HNI families & senior executives</li>
+              </ul>
+              <a class="link-arrow" href="contact.html">Enquire now →</a>
+            </div>
+          </article>
+
+          <article class="listing-card reveal delay-1">
+            <span class="badge">Builder Floor</span>
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80" alt="Builder floor" />
+            <div class="listing-body">
+              <h3>Independent Luxury Floor • South Delhi</h3>
+              <p class="price">₹7.25 Cr onwards</p>
+              <ul>
+                <li>Stilt parking, lift lobby, premium finish</li>
+                <li>Preferred by established family buyers</li>
+                <li>Strong end-user demand in prime colonies</li>
+              </ul>
+              <a class="link-arrow" href="contact.html">Enquire now →</a>
+            </div>
+          </article>
+
+          <article class="listing-card reveal delay-2">
+            <span class="badge">Mid-Segment Family Home</span>
+            <img src="https://images.unsplash.com/photo-1576941089067-2de3c901e126?auto=format&fit=crop&w=1200&q=80" alt="Family apartment" />
+            <div class="listing-body">
+              <h3>3 BHK Gated Community • Noida Expressway</h3>
+              <p class="price">₹1.75 Cr onwards</p>
+              <ul>
+                <li>Ready / near-possession inventory focus</li>
+                <li>Metro and expressway access</li>
+                <li>Strong for end-users upgrading from rent</li>
+              </ul>
+              <a class="link-arrow" href="contact.html">Enquire now →</a>
+            </div>
+          </article>
+
+          <article class="listing-card reveal delay-3">
+            <span class="badge">Investment Plot</span>
+            <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80" alt="Investment plot" />
+            <div class="listing-body">
+              <h3>Gated Plot Opportunity • Greater Noida West</h3>
+              <p class="price">By enquiry</p>
+              <ul>
+                <li>Suitable for long-term appreciation themes</li>
+                <li>Road-width and legal due diligence support</li>
+                <li>Best for patient capital and strategic investors</li>
+              </ul>
+              <a class="link-arrow" href="contact.html">Enquire now →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-accent">
+      <div class="container two-col">
+        <div class="reveal">
+          <p class="eyebrow">What We Do</p>
+          <h2>Full-spectrum real estate lead and advisory services</h2>
+          <div class="service-list">
+            <div>
+              <h3>Buyer Advisory</h3>
+              <p>Shortlisting, market positioning, builder comparison, site visit planning and negotiation guidance.</p>
+            </div>
+            <div>
+              <h3>Seller Lead Generation</h3>
+              <p>Positioning support for resale apartments, floors, villas and plots across Delhi NCR micro-markets.</p>
+            </div>
+            <div>
+              <h3>Investor Advisory</h3>
+              <p>Help with growth-corridor opportunities, yield thinking, holding horizon and exit-oriented selection.</p>
+            </div>
+            <div>
+              <h3>Rental & Relocation Support</h3>
+              <p>Corporate leasing, family relocation, premium rental matching and locality orientation assistance.</p>
+            </div>
+          </div>
+          <a href="services.html" class="btn btn-primary">See all services</a>
+        </div>
+
+        <div class="consult-box reveal delay-1">
+          <h3>Need a custom property funnel?</h3>
+          <p>We can later expand this site into dedicated pages for luxury homes, builder floors, plots, rentals, builders, and city-specific paid campaign landing pages.</p>
+          <ul>
+            <li>Google Ads landing pages</li>
+            <li>Meta Ads enquiry pages</li>
+            <li>Luxury segment pages</li>
+            <li>Seller onboarding forms</li>
+            <li>Micro-market SEO pages</li>
+          </ul>
+          <a href="contact.html" class="btn btn-secondary">Let’s build your funnel</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Client Persona Fit</p>
+          <h2>Designed for both premium and middle-class buyers in NCR</h2>
+        </div>
+
+        <div class="persona-grid">
+          <article class="persona-card reveal">
+            <h3>Luxury Buyer</h3>
+            <p>Looking for exclusivity, privacy, premium finish, branded communities, better frontage, club life and stronger address value.</p>
+          </article>
+          <article class="persona-card reveal delay-1">
+            <h3>Family Upgrader</h3>
+            <p>Moving from rent or smaller ownership into a gated 2/3/4 BHK with better schools, commute and resale confidence.</p>
+          </article>
+          <article class="persona-card reveal delay-2">
+            <h3>NRI / Investor</h3>
+            <p>Needs a structured comparison of location, demand depth, rental potential, ticket size and medium-term exit logic.</p>
+          </article>
+          <article class="persona-card reveal delay-3">
+            <h3>Seller / Landlord</h3>
+            <p>Needs high-quality enquiries, better presentation, location-specific positioning and stronger screening of leads.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Frequently Asked Questions</p>
+          <h2>Real estate questions buyers ask before they enquire</h2>
+        </div>
+
+        <div class="faq-group">
+          <details class="faq-item reveal" open>
+            <summary>Does JustProperty.in only focus on luxury homes?</summary>
+            <p>No. The platform is positioned for both luxury and mid-segment housing across Delhi, Gurgaon, Noida, Greater Noida, Faridabad and Ghaziabad.</p>
+          </details>
+          <details class="faq-item reveal delay-1">
+            <summary>Can I use this website for Google Ads or Meta Ads?</summary>
+            <p>Yes. The structure is intentionally landing-page friendly, with lead capture, locality pages, property showcase blocks and clear CTAs.</p>
+          </details>
+          <details class="faq-item reveal delay-2">
+            <summary>Are the current listings real?</summary>
+            <p>The launch pack includes demo listings for presentation. Before publishing live campaigns, replace these with your verified inventory and approved media.</p>
+          </details>
+          <details class="faq-item reveal delay-3">
+            <summary>Can the forms be connected to CRM, WhatsApp or Telegram?</summary>
+            <p>Yes. This starter version is static for easy GitHub deployment. In the next step, forms can be connected to Formspree, Netlify Forms, Google Sheets, Telegram, WhatsApp or your custom backend.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container cta-band-inner">
+        <div>
+          <p class="eyebrow">Launch JustProperty.in with confidence</p>
+          <h2>Ready to turn your property website into a serious lead machine?</h2>
+        </div>
+        <a href="contact.html" class="btn btn-light">Start with Contact Page</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <img src="assets/logo.svg" alt="JustProperty logo" />
+          <div>
+            <strong>JustProperty.in</strong>
+            <span>Luxury & Mid-Segment Property Leads</span>
+          </div>
+        </a>
+        <p>Built for property discovery, advisory-led conversion and premium presentation in Delhi NCR.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <a href="properties.html">Properties</a>
+        <a href="localities.html">Localities</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+      </div>
+
+      <div>
+        <h4>Support</h4>
+        <a href="contact.html">Contact</a>
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="mailto:info@justproperty.in">info@justproperty.in</a>
+      </div>
+
+      <div>
+        <h4>Coverage</h4>
+        <p>Delhi • Gurgaon • Noida • Greater Noida • Faridabad • Ghaziabad</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 JustProperty.in. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
