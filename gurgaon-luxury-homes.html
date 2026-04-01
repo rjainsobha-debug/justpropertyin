@@ -1,131 +1,1036 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxury Homes in Gurgaon | JustProperty.in</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Homes in Gurgaon | JustProperty.in</title>
+  <meta name="description" content="Explore curated luxury homes in Gurgaon with JustProperty.in. We don’t show 1000 options. We show the right 5." />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f8fafc;
+      --surface:#ffffff;
+      --text:#0f172a;
+      --muted:#64748b;
+      --line:#e2e8f0;
+      --primary:#0f766e;
+      --primary2:#14b8a6;
+      --dark:#020617;
+      --gold:#d4a017;
+      --shadow:0 18px 50px rgba(15,23,42,.10);
+      --radius:24px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    button,input,select,textarea{font:inherit}
+    .container{width:min(var(--max),92vw);margin:auto}
 
-<style>
-body{
-  font-family: Arial, sans-serif;
-  margin:0;
-  background:#f8fafc;
-  color:#111;
-}
+    .topbar{
+      background:linear-gradient(90deg,#052e2b,#0f172a);
+      color:#e2e8f0;
+      font-size:14px;
+    }
+    .topbar .container{
+      display:flex;
+      justify-content:space-between;
+      gap:14px;
+      padding:10px 0;
+      flex-wrap:wrap;
+    }
+    .topbar a{color:#fff;font-weight:700}
 
-.container{
-  max-width:1100px;
-  margin:auto;
-  padding:20px;
-}
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,255,255,.90);
+      backdrop-filter:blur(14px);
+      border-bottom:1px solid rgba(226,232,240,.9);
+    }
+    nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      padding:16px 0;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+    }
+    .logo{
+      width:52px;
+      height:52px;
+      border-radius:18px;
+      background:linear-gradient(135deg,var(--primary),var(--primary2));
+      position:relative;
+      box-shadow:var(--shadow);
+      flex-shrink:0;
+    }
+    .logo:before{
+      content:"";
+      position:absolute;
+      left:10px;right:10px;bottom:9px;top:20px;
+      background:#ecfeff;
+      border-radius:10px 10px 8px 8px;
+    }
+    .logo:after{
+      content:"";
+      position:absolute;
+      left:10px;right:10px;top:10px;height:18px;
+      background:linear-gradient(135deg,#99f6e4,#fff);
+      clip-path:polygon(50% 0,100% 100%,0 100%);
+    }
+    .brand strong{display:block;font-size:21px;line-height:1}
+    .brand span{display:block;font-size:12px;color:var(--muted);margin-top:4px}
 
-h1{
-  font-size:42px;
-  margin-bottom:10px;
-}
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:18px;
+      flex-wrap:wrap;
+    }
+    .nav-links a{
+      font-weight:700;
+      color:#334155;
+    }
 
-p{
-  color:#555;
-}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:14px 22px;
+      border-radius:999px;
+      font-weight:800;
+      border:1px solid transparent;
+      cursor:pointer;
+      transition:.25s ease;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{
+      background:linear-gradient(135deg,var(--primary),var(--primary2));
+      color:#fff;
+      box-shadow:var(--shadow);
+    }
+    .btn-secondary{
+      background:#fff;
+      color:var(--text);
+      border-color:#cbd5e1;
+    }
+    .btn-dark{
+      background:#0f172a;
+      color:#fff;
+    }
+    .btn.full{width:100%}
 
-.btn{
-  display:inline-block;
-  padding:14px 20px;
-  background:#0f766e;
-  color:#fff;
-  border-radius:30px;
-  text-decoration:none;
-  margin-top:10px;
-  border:none;
-  cursor:pointer;
-}
+    .hero{
+      position:relative;
+      overflow:hidden;
+      padding:78px 0 54px;
+      background:
+        radial-gradient(circle at 6% 12%, rgba(20,184,166,.16), transparent 20%),
+        radial-gradient(circle at 95% 10%, rgba(212,160,23,.14), transparent 18%),
+        linear-gradient(135deg,#f8fafc 0%,#eff6ff 38%,#ecfeff 100%);
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background-image:
+        linear-gradient(rgba(255,255,255,.45),rgba(255,255,255,.58)),
+        url('https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1800&q=80');
+      background-size:cover;
+      background-position:center;
+      opacity:.22;
+    }
+    .hero-grid{
+      position:relative;
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:34px;
+      align-items:center;
+    }
+    .eyebrow{
+      display:inline-block;
+      margin:0 0 14px;
+      letter-spacing:.18em;
+      text-transform:uppercase;
+      font-size:12px;
+      font-weight:900;
+      color:var(--primary);
+    }
+    h1,h2,h3,h4{margin:0 0 12px}
+    h1{
+      font-family:"Playfair Display",serif;
+      font-size:clamp(42px,5.8vw,72px);
+      line-height:1.03;
+      max-width:760px;
+      margin-bottom:18px;
+    }
+    h1 span{color:var(--primary)}
+    .hero p.big{
+      font-size:18px;
+      color:#334155;
+      max-width:700px;
+      margin:0 0 24px;
+    }
+    .hero-actions{
+      display:flex;
+      gap:14px;
+      flex-wrap:wrap;
+      margin-bottom:24px;
+    }
+    .hero-points{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:14px;
+    }
+    .hero-point{
+      background:rgba(255,255,255,.82);
+      border:1px solid rgba(255,255,255,.85);
+      padding:18px;
+      border-radius:20px;
+      box-shadow:var(--shadow);
+    }
+    .hero-point strong{
+      display:block;
+      font-size:18px;
+      margin-bottom:4px;
+    }
+    .hero-point span{
+      color:var(--muted);
+      font-size:14px;
+    }
 
-.card{
-  background:#fff;
-  padding:20px;
-  border-radius:15px;
-  margin:20px 0;
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
+    .lead-panel{
+      background:rgba(255,255,255,.96);
+      border:1px solid rgba(255,255,255,.8);
+      border-radius:30px;
+      padding:28px;
+      box-shadow:0 22px 60px rgba(15,23,42,.14);
+    }
+    .lead-panel h2{
+      font-size:30px;
+      font-family:"Playfair Display",serif;
+    }
+    .lead-panel p{margin:0 0 18px;color:var(--muted)}
+    .form-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:14px;
+    }
+    .field{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+    .field label{
+      font-size:14px;
+      font-weight:800;
+      color:#334155;
+    }
+    .field input,.field select,.field textarea{
+      width:100%;
+      padding:14px 16px;
+      border:1px solid #d7e0ea;
+      background:#fff;
+      border-radius:16px;
+      color:var(--text);
+    }
+    .field textarea{
+      min-height:110px;
+      resize:vertical;
+    }
+    .field input:focus,.field select:focus,.field textarea:focus{
+      outline:none;
+      border-color:var(--primary2);
+      box-shadow:0 0 0 4px rgba(20,184,166,.12);
+    }
+    .mini-note{
+      font-size:12px;
+      color:var(--muted);
+      margin:10px 0 0;
+    }
+    .success{
+      display:none;
+      margin-top:14px;
+      background:#dcfce7;
+      color:#166534;
+      border:1px solid #86efac;
+      padding:14px 16px;
+      border-radius:16px;
+      font-weight:700;
+    }
 
-input,select,textarea{
-  width:100%;
-  padding:12px;
-  margin:8px 0;
-  border-radius:10px;
-  border:1px solid #ccc;
-}
+    section{padding:84px 0}
+    .section-head{
+      max-width:840px;
+      margin:0 auto 34px;
+      text-align:center;
+    }
+    .section-head h2{
+      font-family:"Playfair Display",serif;
+      font-size:clamp(32px,4.4vw,52px);
+      line-height:1.08;
+    }
+    .section-head p{
+      margin:0;
+      color:var(--muted);
+      font-size:18px;
+    }
 
-.whatsapp{
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:#fff;
-  padding:15px 18px;
-  border-radius:50%;
-  font-size:20px;
-  text-decoration:none;
-}
-</style>
+    .cards-3,.cards-4,.listing-grid,.funnel-grid,.faq-wrap{
+      display:grid;
+      gap:22px;
+    }
+    .cards-3{grid-template-columns:repeat(3,1fr)}
+    .cards-4{grid-template-columns:repeat(4,1fr)}
+    .listing-grid{grid-template-columns:repeat(3,1fr)}
+    .funnel-grid{grid-template-columns:repeat(4,1fr)}
+
+    .card,.listing-card,.funnel-step,.faq-item,.contact-box,.service-box{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:26px;
+      box-shadow:var(--shadow);
+    }
+    .card,.funnel-step,.faq-item,.contact-box,.service-box{padding:26px}
+    .icon{
+      width:54px;
+      height:54px;
+      border-radius:18px;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(135deg,#ccfbf1,#f5f3ff);
+      font-size:24px;
+      font-weight:900;
+    }
+    .muted{color:var(--muted)}
+
+    .surface-dark{
+      background:linear-gradient(135deg,#08111f,#0f172a);
+      color:#e2e8f0;
+    }
+    .surface-dark .section-head h2,.surface-dark h3,.surface-dark h4{color:#fff}
+    .surface-dark .section-head p,.surface-dark .muted{color:#cbd5e1}
+    .surface-dark .card,.surface-dark .funnel-step,.surface-dark .faq-item,.surface-dark .service-box{
+      background:#111b2e;
+      border-color:#22314c;
+    }
+
+    .listing-card{
+      overflow:hidden;
+      position:relative;
+    }
+    .listing-card img{
+      width:100%;
+      height:230px;
+      object-fit:cover;
+    }
+    .badge{
+      position:absolute;
+      left:16px;
+      top:16px;
+      z-index:2;
+      background:rgba(15,23,42,.9);
+      color:#fff;
+      padding:8px 12px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:800;
+    }
+    .listing-body{padding:22px}
+    .price{
+      font-size:22px;
+      font-weight:900;
+      color:var(--primary);
+      margin-bottom:10px;
+    }
+    .listing-body ul{
+      padding-left:18px;
+      margin:0 0 12px;
+      color:var(--muted);
+    }
+
+    .trust-strip{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+      margin-top:22px;
+    }
+    .trust-item{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:18px;
+      box-shadow:var(--shadow);
+    }
+    .trust-item strong{
+      display:block;
+      margin-bottom:5px;
+    }
+
+    .services-grid{
+      display:grid;
+      grid-template-columns:1.05fr .95fr;
+      gap:24px;
+      align-items:start;
+    }
+    .bullet-list{
+      display:grid;
+      gap:16px;
+    }
+    .bullet{
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+    }
+    .surface-dark .bullet{
+      background:#111b2e;
+      border-color:#22314c;
+    }
+    .bullet strong{
+      display:block;
+      margin-bottom:4px;
+    }
+
+    .funnel-step .step{
+      font-size:12px;
+      letter-spacing:.15em;
+      text-transform:uppercase;
+      color:var(--primary);
+      font-weight:900;
+    }
+
+    .faq-wrap{grid-template-columns:1fr}
+    .faq-item summary{
+      cursor:pointer;
+      font-size:18px;
+      font-weight:800;
+    }
+    .faq-item p{
+      margin:12px 0 0;
+      color:var(--muted);
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
+    }
+    .contact-box .line{
+      display:block;
+      height:1px;
+      background:var(--line);
+      margin:18px 0;
+    }
+
+    .cta-band{
+      padding:34px 0 88px;
+      background:#0f172a;
+    }
+    .cta-box{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      flex-wrap:wrap;
+      background:linear-gradient(135deg,var(--primary2),var(--primary));
+      color:#fff;
+      border-radius:34px;
+      padding:34px;
+      box-shadow:var(--shadow);
+    }
+    .cta-box h2{
+      font-size:34px;
+      line-height:1.1;
+      margin:0;
+    }
+
+    footer{
+      background:#020617;
+      color:#cbd5e1;
+      padding:54px 0 16px;
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns:2fr 1fr 1fr 1fr;
+      gap:22px;
+    }
+    footer h4{color:#fff}
+    footer a,footer p{
+      display:block;
+      color:#cbd5e1;
+      margin:0 0 10px;
+    }
+    .footer-bottom{
+      margin-top:20px;
+      padding-top:18px;
+      border-top:1px solid rgba(148,163,184,.18);
+      font-size:14px;
+      color:#94a3b8;
+    }
+
+    .floating-whatsapp{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      z-index:120;
+      width:64px;
+      height:64px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:#25D366;
+      color:#fff;
+      box-shadow:0 18px 40px rgba(37,211,102,.35);
+      font-size:30px;
+      font-weight:900;
+    }
+    .floating-call{
+      position:fixed;
+      right:18px;
+      bottom:94px;
+      z-index:120;
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:#0f172a;
+      color:#fff;
+      box-shadow:var(--shadow);
+      font-size:24px;
+    }
+
+    @media (max-width:1100px){
+      .hero-grid,.services-grid,.contact-grid,.cards-3,.cards-4,.listing-grid,.funnel-grid,.trust-strip,.footer-grid{
+        grid-template-columns:1fr 1fr;
+      }
+      .footer-grid > :first-child{grid-column:1/-1}
+    }
+    @media (max-width:840px){
+      nav,.hero-grid,.form-grid,.services-grid,.contact-grid,.cards-3,.cards-4,.listing-grid,.funnel-grid,.trust-strip,.footer-grid,.hero-points{
+        grid-template-columns:1fr;
+      }
+      nav{display:block}
+      .nav-links{
+        margin-top:14px;
+        gap:12px;
+      }
+      .cta-box{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+      h1{font-size:42px}
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="container">
+  <div class="topbar">
+    <div class="container">
+      <div><strong>JustProperty.in</strong> • Gurgaon luxury property advisory • Curated premium homes</div>
+      <div><a href="mailto:info@justproperty.in">info@justproperty.in</a> • <a href="tel:+919718773000">9718773000</a></div>
+    </div>
+  </div>
 
-<h1>Luxury Homes in Gurgaon</h1>
-<p><b>We don’t show 1000 options. We show the right 5.</b></p>
+  <header>
+    <nav class="container">
+      <a href="https://justproperty.in/" class="brand">
+        <div class="logo"></div>
+        <div>
+          <strong>JustProperty.in</strong>
+          <span>Luxury & Mid-Segment Property Leads</span>
+        </div>
+      </a>
 
-<a class="btn" href="https://wa.me/919718773000?text=Hi I want luxury property in Gurgaon" target="_blank">
-WhatsApp Now
-</a>
+      <div class="nav-links">
+        <a href="https://justproperty.in/">Home</a>
+        <a href="#listings">Inventory</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact" class="btn btn-secondary">Contact</a>
+      </div>
+    </nav>
+  </header>
 
-<div class="card">
-<h2>4 BHK Luxury Apartments</h2>
-<p>Golf Course Road, Extension Road, premium gated societies</p>
-</div>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Gurgaon Luxury Homes</p>
+          <h1>Discover curated <span>luxury homes in Gurgaon</span> with expert guidance.</h1>
+          <p class="big">
+            Looking for premium apartments, luxury builder floors, penthouses or investment-grade homes in Gurgaon?
+            JustProperty.in is designed for serious buyers who want better options, faster guidance and sharper shortlisting.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">Get Top 5 Options</a>
+            <a href="https://wa.me/919718773000?text=Hi%20I%20want%20luxury%20property%20in%20Gurgaon" target="_blank" rel="noopener" class="btn btn-secondary">WhatsApp Now</a>
+          </div>
 
-<div class="card">
-<h2>Luxury Builder Floors</h2>
-<p>Independent living, lift, parking, premium finish</p>
-</div>
+          <div class="hero-points">
+            <div class="hero-point">
+              <strong>Luxury Apartments</strong>
+              <span>Golf Course Road, Extension Road, SPR and premium sectors</span>
+            </div>
+            <div class="hero-point">
+              <strong>Builder Floors</strong>
+              <span>Independent living, privacy, premium finish and better exclusivity</span>
+            </div>
+            <div class="hero-point">
+              <strong>Investor Shortlists</strong>
+              <span>Premium locations with stronger address value and demand depth</span>
+            </div>
+          </div>
+        </div>
 
-<div class="card">
-<h2>Ultra Luxury Penthouses</h2>
-<p>Skyline views, terrace living, exclusive inventory</p>
-</div>
+        <div class="lead-panel">
+          <p class="eyebrow">Quick Requirement Form</p>
+          <h2>Tell us what you need</h2>
+          <p>We don’t show 1000 options. We show the right 5.</p>
 
-<div class="card">
-<h2>Send Your Requirement</h2>
+          <form id="leadForm">
+            <div class="form-grid">
+              <div class="field">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Your name" required>
+              </div>
+              <div class="field">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="Your mobile number" required>
+              </div>
+              <div class="field">
+                <label>Property Type</label>
+                <select name="property_type">
+                  <option>Luxury Apartment</option>
+                  <option>Luxury Builder Floor</option>
+                  <option>Penthouse</option>
+                  <option>Villa</option>
+                  <option>Investment Property</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Budget</label>
+                <select name="budget">
+                  <option>₹2Cr – ₹3Cr</option>
+                  <option>₹3Cr – ₹5Cr</option>
+                  <option>₹5Cr – ₹10Cr</option>
+                  <option>₹10Cr+</option>
+                </select>
+              </div>
+            </div>
 
-<form onsubmit="sendLead(event)">
-<input placeholder="Your Name" required>
-<input placeholder="Phone Number" required>
+            <div class="field" style="margin-top:14px">
+              <label>Requirement Details</label>
+              <textarea name="message" placeholder="Example: 4 BHK in Gurgaon, premium gated community, ready to move, near Golf Course Extension Road"></textarea>
+            </div>
 
-<select>
-<option>Budget 2Cr+</option>
-<option>Budget 3Cr+</option>
-<option>Budget 5Cr+</option>
-</select>
+            <button class="btn btn-primary full" type="submit">Get Top 5 Options</button>
+            <p class="mini-note">Submitting opens WhatsApp instantly and also prepares an email backup to info@justproperty.in.</p>
+            <div class="success" id="successMsg">Opening WhatsApp and email draft for your enquiry.</div>
+          </form>
+        </div>
+      </div>
+    </section>
 
-<textarea placeholder="Your Requirement"></textarea>
+    <section id="why-us">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Why buyers choose JustProperty.in</p>
+          <h2>A sharper, cleaner way to buy luxury property in Gurgaon</h2>
+          <p>
+            High-value property buyers do not need clutter. They need filtered options, location intelligence, quick response and the confidence that someone understands the market.
+          </p>
+        </div>
 
-<button class="btn">Get Top 5 Options</button>
-</form>
+        <div class="cards-4">
+          <div class="card">
+            <div class="icon">◆</div>
+            <h3>Curated Deals</h3>
+            <p class="muted">Only shortlisted luxury opportunities based on your budget, location and preferred format.</p>
+          </div>
+          <div class="card">
+            <div class="icon">◎</div>
+            <h3>Faster Response</h3>
+            <p class="muted">WhatsApp-first enquiry handling for faster conversion and less lead drop-off.</p>
+          </div>
+          <div class="card">
+            <div class="icon">▣</div>
+            <h3>Gurgaon Focus</h3>
+            <p class="muted">Built specifically around Gurgaon’s premium micro-markets and luxury buyer behaviour.</p>
+          </div>
+          <div class="card">
+            <div class="icon">◈</div>
+            <h3>Premium Positioning</h3>
+            <p class="muted">The site is designed like an advisory funnel, not a generic property portal.</p>
+          </div>
+        </div>
 
-</div>
+        <div class="trust-strip">
+          <div class="trust-item">
+            <strong>Luxury apartments</strong>
+            <span class="muted">Premium high-rise and gated residences</span>
+          </div>
+          <div class="trust-item">
+            <strong>Builder floors</strong>
+            <span class="muted">Privacy-led premium inventory</span>
+          </div>
+          <div class="trust-item">
+            <strong>Serious buyers only</strong>
+            <span class="muted">Built to attract high-intent enquiries</span>
+          </div>
+          <div class="trust-item">
+            <strong>Top 5 approach</strong>
+            <span class="muted">Filtered, relevant and faster to act on</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</div>
+    <section class="surface-dark" id="listings">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Featured Gurgaon categories</p>
+          <h2>Luxury inventory formats buyers ask for most</h2>
+          <p>Use these sections to present your best Gurgaon stock. Replace with your verified inventory later.</p>
+        </div>
 
-<a class="whatsapp" href="https://wa.me/919718773000?text=Hi I want Gurgaon property" target="_blank">💬</a>
+        <div class="listing-grid">
+          <article class="listing-card">
+            <span class="badge">Luxury Apartments</span>
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80" alt="Luxury apartment in Gurgaon">
+            <div class="listing-body">
+              <h3>4 BHK Luxury Apartments</h3>
+              <div class="price">₹3Cr onwards</div>
+              <ul>
+                <li>Golf Course Road and Extension Road focus</li>
+                <li>Clubhouse, views, premium finish, gated living</li>
+                <li>Ideal for HNIs, CXOs and upgraded family buyers</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary">Request options</a>
+            </div>
+          </article>
 
-<script>
-function sendLead(e){
-  e.preventDefault();
-  window.open("https://wa.me/919718773000?text=New Gurgaon Luxury Lead");
-}
-</script>
+          <article class="listing-card">
+            <span class="badge">Builder Floors</span>
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1200&q=80" alt="Luxury builder floor in Gurgaon">
+            <div class="listing-body">
+              <h3>Luxury Builder Floors</h3>
+              <div class="price">₹2.5Cr onwards</div>
+              <ul>
+                <li>Independent floor living with privacy</li>
+                <li>Lift, dedicated parking, premium layouts</li>
+                <li>Best for buyers wanting exclusivity over tower living</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary">Request options</a>
+            </div>
+          </article>
 
+          <article class="listing-card">
+            <span class="badge">Penthouses</span>
+            <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1200&q=80" alt="Penthouse in Gurgaon">
+            <div class="listing-body">
+              <h3>Ultra Luxury Penthouses</h3>
+              <div class="price">By enquiry</div>
+              <ul>
+                <li>Top-floor residences and skyline-facing inventory</li>
+                <li>High exclusivity, larger layouts and prestige value</li>
+                <li>Ideal for premium address-conscious buyers</li>
+              </ul>
+              <a href="#contact" class="btn btn-secondary">Request options</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How we help</p>
+          <h2>From enquiry to shortlist to serious visit</h2>
+          <p>Luxury buyers convert faster when the process feels structured and intelligent.</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-box">
+            <h3>What you get</h3>
+            <div class="bullet-list">
+              <div class="bullet">
+                <strong>Requirement-led shortlisting</strong>
+                <span class="muted">We align property options with budget, preferred location and property format.</span>
+              </div>
+              <div class="bullet">
+                <strong>Premium micro-market focus</strong>
+                <span class="muted">Golf Course Road, Golf Course Extension Road, SPR and other premium Gurgaon corridors.</span>
+              </div>
+              <div class="bullet">
+                <strong>Less confusion, faster decisions</strong>
+                <span class="muted">Instead of random browsing, you get a more consultative approach.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-box">
+            <h3>Best suited for</h3>
+            <div class="bullet-list">
+              <div class="bullet">
+                <strong>Luxury buyers</strong>
+                <span class="muted">Wanting better address value and premium community fit.</span>
+              </div>
+              <div class="bullet">
+                <strong>Family upgraders</strong>
+                <span class="muted">Moving from mid-segment to premium gated living.</span>
+              </div>
+              <div class="bullet">
+                <strong>NRI / investor buyers</strong>
+                <span class="muted">Looking for curated entry into Gurgaon’s premium markets.</span>
+              </div>
+            </div>
+            <div style="margin-top:18px">
+              <a href="https://wa.me/919718773000?text=Hi%20I%20need%20luxury%20Gurgaon%20property%20options" target="_blank" rel="noopener" class="btn btn-primary">Start on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="surface-dark">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Lead flow</p>
+          <h2>How this landing page is meant to convert</h2>
+          <p>Keep the user focused. Less distraction. More intent capture.</p>
+        </div>
+
+        <div class="funnel-grid">
+          <div class="funnel-step">
+            <div class="step">Step 1</div>
+            <h3>User clicks Google Ad</h3>
+            <p class="muted">Instead of landing on the homepage, the user arrives directly on a Gurgaon-specific page.</p>
+          </div>
+          <div class="funnel-step">
+            <div class="step">Step 2</div>
+            <h3>User sees relevant message</h3>
+            <p class="muted">Luxury Gurgaon buyer sees content meant specifically for that demand type.</p>
+          </div>
+          <div class="funnel-step">
+            <div class="step">Step 3</div>
+            <h3>User submits enquiry</h3>
+            <p class="muted">Form, WhatsApp and call actions all work together to increase response rate.</p>
+          </div>
+          <div class="funnel-step">
+            <div class="step">Step 4</div>
+            <h3>You follow up quickly</h3>
+            <p class="muted">Fast calling and sharp shortlisting is where real conversion happens.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Frequently asked questions</p>
+          <h2>Things luxury buyers often want clarity on</h2>
+        </div>
+
+        <div class="faq-wrap">
+          <details class="faq-item" open>
+            <summary>Is this page only for Gurgaon luxury properties?</summary>
+            <p>Yes. This landing page is intentionally focused on Gurgaon luxury demand so ad traffic feels relevant and converts better.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Will this page be linked to the main website?</summary>
+            <p>Yes. You can link it from the homepage, and you can also send paid ad traffic directly to this page.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I create similar pages for Noida and South Delhi?</summary>
+            <p>Yes. That is actually the smart next move so each ad group has its own high-intent page.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can this collect WhatsApp leads immediately?</summary>
+            <p>Yes. This page opens WhatsApp instantly and also prepares an email backup to info@justproperty.in.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Get in touch</p>
+          <h2>Talk to JustProperty.in about Gurgaon luxury property</h2>
+          <p>For apartments, builder floors, penthouses and premium investor opportunities.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-box">
+            <h3>Send your requirement</h3>
+            <form id="contactForm">
+              <div class="form-grid">
+                <div class="field">
+                  <label>Full Name</label>
+                  <input type="text" name="name" placeholder="Your name" required>
+                </div>
+                <div class="field">
+                  <label>Phone Number</label>
+                  <input type="tel" name="phone" placeholder="Your number" required>
+                </div>
+                <div class="field">
+                  <label>Email</label>
+                  <input type="email" name="email" placeholder="Your email">
+                </div>
+                <div class="field">
+                  <label>Budget</label>
+                  <select name="budget">
+                    <option>₹2Cr – ₹3Cr</option>
+                    <option>₹3Cr – ₹5Cr</option>
+                    <option>₹5Cr – ₹10Cr</option>
+                    <option>₹10Cr+</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field" style="margin-top:14px">
+                <label>Requirement</label>
+                <textarea name="message" placeholder="Tell us the location, property type and any must-have requirement."></textarea>
+              </div>
+
+              <button class="btn btn-primary full" type="submit">Submit Enquiry</button>
+              <div class="success" id="contactSuccess">Opening WhatsApp and email draft for your enquiry.</div>
+            </form>
+          </div>
+
+          <div class="contact-box">
+            <h3>Contact details</h3>
+            <p><strong>Email:</strong> <a href="mailto:info@justproperty.in">info@justproperty.in</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919718773000">9718773000</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/919718773000?text=Hi%20I%20want%20luxury%20property%20in%20Gurgaon" target="_blank" rel="noopener">Start chat</a></p>
+            <span class="line"></span>
+            <h4>Best use of this page</h4>
+            <p class="muted">Run Google Ads traffic directly here instead of sending Gurgaon luxury buyers to the homepage.</p>
+            <a href="https://wa.me/919718773000?text=Hi%20I%20want%20luxury%20property%20in%20Gurgaon" target="_blank" rel="noopener" class="btn btn-primary">WhatsApp Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <p class="eyebrow" style="color:#ccfbf1;margin-bottom:8px">Gurgaon Luxury</p>
+            <h2>Ready to attract serious Gurgaon luxury buyers?</h2>
+          </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a class="btn btn-secondary" href="https://wa.me/919718773000?text=Hi%20I%20need%20Gurgaon%20luxury%20home%20options" target="_blank" rel="noopener">WhatsApp Now</a>
+            <a class="btn btn-dark" href="mailto:info@justproperty.in">Email Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="margin-bottom:12px">
+          <div class="logo"></div>
+          <div>
+            <strong style="color:#fff">JustProperty.in</strong>
+            <span>Luxury & Mid-Segment Property Leads</span>
+          </div>
+        </div>
+        <p>Premium landing page built for Gurgaon luxury property enquiries and Google Ads conversion.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="https://justproperty.in/">Homepage</a>
+        <a href="#listings">Inventory</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div>
+        <h4>Lead Actions</h4>
+        <a href="#contact">Contact Form</a>
+        <a href="https://wa.me/919718773000?text=Hi%20I%20want%20luxury%20property%20in%20Gurgaon" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="tel:+919718773000">Call 9718773000</a>
+      </div>
+      <div>
+        <h4>Support</h4>
+        <a href="mailto:info@justproperty.in">info@justproperty.in</a>
+        <p>Gurgaon Luxury Page</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">© 2026 JustProperty.in. All rights reserved.</div>
+  </footer>
+
+  <a class="floating-call" href="tel:+919718773000" aria-label="Call JustProperty">☎</a>
+  <a class="floating-whatsapp" href="https://wa.me/919718773000?text=Hi%20I%20want%20luxury%20property%20in%20Gurgaon" target="_blank" rel="noopener" aria-label="WhatsApp JustProperty">✆</a>
+
+  <script>
+    function formDataToObject(form){
+      const fd = new FormData(form);
+      return Object.fromEntries(fd.entries());
+    }
+
+    function makeLeadMessage(data){
+      const lines = [
+        'New Gurgaon Luxury Lead from JustProperty.in',
+        '',
+        'Name: ' + (data.name || ''),
+        'Phone: ' + (data.phone || ''),
+        'Email: ' + (data.email || ''),
+        'Property Type: ' + (data.property_type || ''),
+        'Budget: ' + (data.budget || ''),
+        'Message: ' + (data.message || '')
+      ];
+      return lines.join('\\n');
+    }
+
+    function openLeadActions(form, successId){
+      const data = formDataToObject(form);
+      const msg = makeLeadMessage(data);
+      const whatsappUrl = 'https://wa.me/919718773000?text=' + encodeURIComponent(msg);
+      const emailSubject = encodeURIComponent('New Gurgaon Luxury Lead - ' + (data.name || 'Website Enquiry'));
+      const emailBody = encodeURIComponent(msg + '\\n\\nSource: Gurgaon Landing Page');
+      const mailUrl = 'mailto:info@justproperty.in?subject=' + emailSubject + '&body=' + emailBody;
+
+      const success = document.getElementById(successId);
+      if(success) success.style.display = 'block';
+
+      window.open(whatsappUrl, '_blank');
+      setTimeout(() => { window.location.href = mailUrl; }, 400);
+      form.reset();
+    }
+
+    document.getElementById('leadForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      openLeadActions(this, 'successMsg');
+    });
+
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      openLeadActions(this, 'contactSuccess');
+    });
+  </script>
 </body>
 </html>
